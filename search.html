@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук авто</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icons8-hover-car-64.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="login.html" class="nav__link pill-button">Авторизація</a>
+                </li>
+                <li class="nav__item">
+                    <a href="register.html" class="nav__link pill-button">Реєстрація</a>
+                </li>
+                <li class="nav__item">
+                    <a href="catalog.html" class="nav__link pill-button">Каталог</a>
+                </li>
+                <li class="nav__item">
+                    <a href="search.html" class="nav__link pill-button">Пошук авто</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Пошук авто</h1>
+        <form action="https://fom.in.ua/echo" method="get">
+            <label for="body_type">Тип кузова:</label>
+            <select id="body_type" name="body_type">
+                <option value="sedan">Седан</option>
+                <option value="suv">Позашляховик</option>
+                <option value="hatchback">Хетчбек</option>
+                <option value="wagon">Універсал</option>
+                <option value="roadster">Родстер</option>
+                <option value="pickup">Пікап</option>
+                <option value="minivan">Мінівен</option>
+                <option value="crossover">Кросовер</option>
+            </select><br>
+            <label for="brand">Марка авто:</label>
+            <input type="text" id="brand" name="brand"><br>
+            <label for="country">Країна виробник:</label>
+            <input type="text" id="country" name="country"><br>
+            <label for="price_min">Ціна від:</label>
+            <input type="number" id="price_min" name="price_min"><br>
+            <label for="price_max">Ціна до:</label>
+            <input type="number" id="price_max" name="price_max"><br>
+            <label for="year_min">Рік випуску від:</label>
+            <input type="number" id="year_min" name="year_min"><br>
+            <label for="year_max">Рік випуску до:</label>
+            <input type="number" id="year_max" name="year_max"><br>
+            <label>Стан авто:</label><br>
+            <input type="checkbox" name="condition" value="new"> Новий<br>
+            <input type="checkbox" name="condition" value="used"> Вживаний<br>
+            <input type="checkbox" name="condition" value="accident"> Був у ДТП<br>
+            <input type="checkbox" name="condition" value="unregistered"> Нерозмитнений<br>
+            <label for="fuel">Тип палива:</label>
+            <select id="fuel" name="fuel">
+                <option value="petrol">Бензин</option>
+                <option value="diesel">Дизель</option>
+                <option value="electric">Електро</option>
+                <option value="petrol-gas">Бензин/Газ</option>
+                <option value="hybrid">Гібрид</option>
+                <option value="hydrogen">Водень</option>
+            </select><br>
+            <label for="transmission">Тип коробки передач:</label>
+            <select id="transmission" name="transmission">
+                <option value="manual">Механіка</option>
+                <option value="automatic">Автомат</option>
+                <option value="variator">Варіатор</option>
+                <option value="hydromechanical">Гідромеханічна</option>
+                <option value="reducer">Редуктор</option>
+                <option value="robotic">Роботизована</option>
+            </select><br>
+            <label for="color">Колір:</label>
+            <input type="text" id="color" name="color"><br>
+            <label>Комфорт:</label><br>
+            <input type="checkbox" name="comfort" value="board-computer"> Бортовий комп'ютер<br>
+            <input type="checkbox" name="comfort" value="climate-control"> Клімат контроль<br>
+            <input type="checkbox" name="comfort" value="sunroof"> Люк<br>
+            <input type="checkbox" name="comfort" value="leather-seats"> Шкіряний салон<br>
+            <input type="checkbox" name="comfort" value="air-conditioner"> Кондиціонер<br>
+            <button type="submit">Пошук</button>
+        </form>
+        <p><a href="catalog.html">Перейти до каталогу</a></p>
+    </div>
+</body>
+</html>
